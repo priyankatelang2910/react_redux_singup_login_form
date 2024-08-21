@@ -1,0 +1,113 @@
+.navbar {
+    background-color: #000 !important;
+
+    .navbar-brand {
+        color: #fff;
+    }
+
+    .navbar-toggler {
+        background-color: #ffca10;
+    }
+
+    .nav-item {
+        list-style: none;
+        margin-right: 30px;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        display: inline-block;
+        vertical-align: middle;
+
+        .nav-link {
+            color: #fff;
+            font-size: 0.938rem;
+            display: block;
+            line-height: 30px;
+            font-weight: 600;
+            padding: 15px 0;
+            opacity: 1;
+            text-align: center;
+            text-transform: capitalize;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+
+            &:before {
+                position: absolute;
+                bottom: 8px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 0%;
+                content: '.';
+                color: transparent;
+                background: #aaa;
+                height: 1px;
+                transition: all .5s;
+            }
+
+            &:hover {
+                color: #ffca10;
+
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .active {
+            color: red;
+        }
+    }
+}
+
+.offcanvas-body {
+    @media (max-width: 991px) {
+        background-color: #ffca10;
+    }
+}
+
+// --------------navabr end------------------------------
+.login-form {
+    h5 {
+        color: #ffca10;
+        font-weight: 600;
+    }
+
+    .students-form {
+        border: 2px solid #dddfe2;
+        border-radius: 8px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        margin: auto;
+        padding: 23px 15px;
+        width: 396px;
+
+        .form-control {
+            &:focus {
+
+                border-color: #ffca10;
+                outline: 0;
+                box-shadow: none !important;
+            }
+        }
+    }
+}
+
+.button-1 {
+    background: #ffca10;
+    color: #fff;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 3px 0;
+
+    &:hover {
+        background: #ffca10;
+        color: #fff;
+    }
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+}
